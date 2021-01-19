@@ -1,23 +1,18 @@
 # Vue Dadata
 
-![Publish](https://github.com/ikloster03/vue-dadata/workflows/Publish/badge.svg)
-[![gitlocalized ](https://gitlocalize.com/repo/3342/whole_project/badge.svg)](https://gitlocalize.com/repo/3342/whole_project?utm_source=badge)
+![Publish](https://github.com/topninja/vue-dadata/workflows/Publish/badge.svg)
+
 
 It's a vue component for hinting addresses using [DaData.ru](https://dadata.ru).
 
-[Link to RU documentation](https://github.com/ikloster03/vue-dadata/tree/master/ru/README.md)
+[Link to RU documentation](https://github.com/topninja/vue-dadata/tree/master/ru/README.md)
 
 ## Install
 
-[npm package](https://www.npmjs.com/package/vue-dadata)
+[npm package](https://www.npmjs.com/package/@fivestarsmobi/vue-dadata)
 
 ```bash
-$ npm install vue-dadata --save
-```
-
-[yarn package](https://yarnpkg.com/en/package/vue-dadata)
-```bash
-$ yarn add vue-dadata
+$ npm install @fivestarsmobi/vue-dadata --save
 ```
 
 ## Usage
@@ -25,7 +20,7 @@ $ yarn add vue-dadata
 ### Global
 
 ```js
-import VueDadata from 'vue-dadata'
+import VueDadata from '@fivestarsmobi/vue-dadata'
 
 Vue.use(VueDadata)
 ```
@@ -70,6 +65,7 @@ export default {
 | unhighlightClassName  | No  |  string  |  CSS class name applied to unhighlighted text |
 | highlightTag  | No  |  string  |  Type of tag to wrap around highlighted matches; defaults to `mark` but can also be a component |
 | locationOptions  | No  |  object  |  Location options for choosing cities or countries |
+| metro  | No  |  boolean  |  Metro display or not |
 
 
 ## Dependencies
@@ -84,31 +80,13 @@ export default {
 
 ## Issue Reporting
 
-If you have found a bug or if you have a feature request, please report them at this repository [issues section](https://github.com/ikloster03/vue-dadata/issues).
+If you have found a bug or if you have a feature request, please report them at this repository [issues section](https://github.com/topninja/vue-dadata/issues).
 
-## ToDo
-
-[Show project Vue Dadata](https://github.com/ikloster03/vue-dadata/projects/1)
-
-## Milestones
-
-[Show milestones](https://github.com/ikloster03/vue-dadata/milestones)
-
-## Contact me
-
-- Site: [ikloster.ru](http://ikloster.ru)
-- E-mail: <ikloster@yandex.ru>
-- Twitter: [twitter.com/IvanMonastyrev](https://twitter.com/IvanMonastyrev)
 
 ## Contributors
 
 - [Valery Roshett](https://github.com/Roshett)
 - [Ilya Kiselev](https://github.com/kiselev-webdev)
+- [Lyu Jin](https://github.com/topninja)
 
-## [CHANGELOG](https://github.com/ikloster03/vue-dadata/blob/master/CHANGELOG.md)
-
-## [CONTRIBUTING](https://github.com/ikloster03/vue-dadata/blob/master/CONTRIBUTING.md)
-
-## [LICENSE](https://github.com/ikloster03/vue-dadata/blob/master/LICENSE)
-
-Copyright (c) 2019 Ivan Monastyrev <ikloster@yandex.ru>. Licensed under the [MIT license](https://github.com/ikloster03/vue-dadata/blob/master/LICENSE).
+Licensed under the [MIT license](https://github.com/topninja/vue-dadata/blob/master/LICENSE).
