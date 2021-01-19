@@ -8,7 +8,7 @@ export interface Suggestion {
   toBound?: string;
   fromBound?: string;
   locationOptions: LocationOptions;
-  metro: boolean
+  metro: boolean | undefined;
 }
 
 export interface SuggestionPayload {
