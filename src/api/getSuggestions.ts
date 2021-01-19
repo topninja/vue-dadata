@@ -37,7 +37,7 @@ async function getSuggestions({
         'Authorization': `Token ${token}`,
       },
     });
-    if (metro){
+    if (metro === false){
       return suggestions.filter(function(suggestion:any) {
         return suggestion.data.street_type_full !== "метро";
       });;
