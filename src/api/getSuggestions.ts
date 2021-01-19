@@ -13,6 +13,7 @@ async function getSuggestions({
   toBound,
   fromBound,
   locationOptions,
+  metro
 }: Suggestion): Promise<DadataSuggestion[]> {
   url = url || DEFAULT_URL;
   count = count || 10;
@@ -36,8 +37,12 @@ async function getSuggestions({
         'Authorization': `Token ${token}`,
       },
     });
-
-    return suggestions;
+    if (metro){
+      return suggestions.filter(function(suggestion:any) {
+        return suggestion.data.street_type_full !== "метро";
+      });;
+    }
+    else return suggestions;
   } catch (error) {
     throw new Error(error);
   }
