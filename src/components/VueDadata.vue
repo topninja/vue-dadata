@@ -71,7 +71,7 @@ export default class VueDadata extends Vue {
   @Prop(String) public readonly fromBound?: BoundsType;
   @Prop(String) public readonly toBound?: BoundsType;
   @Prop(String) public readonly inputName?: string;
-  @Prop({type:Boolean, default: false}) public readonly metro?: boolean;
+  @Prop({ type: Boolean, default: false }) public readonly metro?: boolean;
   @Prop({
     type: Object,
     default: () => ({
@@ -196,7 +196,7 @@ export default class VueDadata extends Vue {
         fromBound: this.fromBound,
         locationOptions: this.locationOptions,
         count,
-        metro: this.metro
+        metro: this.metro,
       };
       const suggestions = await getSuggestions(request);
 

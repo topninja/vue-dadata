@@ -6,7 +6,7 @@ declare global {
     interface Element extends VNode {
       methods: {
         setInputQuery(value: string): void;
-      }
+      };
     }
     // tslint:disable no-empty-interface
     interface ElementClass extends Vue {}
